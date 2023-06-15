@@ -1,10 +1,10 @@
 import {
-  Entity,
-  Column,
-  PrimaryGeneratedColumn,
   AfterInsert,
-  AfterUpdate,
   AfterRemove,
+  AfterUpdate,
+  Column,
+  Entity,
+  PrimaryGeneratedColumn,
 } from 'typeorm';
 
 // By convention, we should name the classes as their type, except for the User
