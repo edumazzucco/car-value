@@ -38,4 +38,4 @@ export class UsersService {
   }
 }
 
-const usersService = new UsersService({} as any);
+// const usersService = new UsersService({} as any);
