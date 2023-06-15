@@ -38,6 +38,17 @@ export class UsersController {
     return user;
   }
 
+  @Get('/current-user')
+  async currentUser(@Session() session: any) {
+    return this.usersService.findOne(session.userId);
+  }
+
+  @Post('/signout')
+  signout(@Session() session: any) {
+    session.userId = null;
+    return null;
+  }
+
   @Get('/:id')
   async findUser(@Param('id') id: string) {
     const user = await this.usersService.findOne(parseInt(id));

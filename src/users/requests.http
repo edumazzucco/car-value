@@ -1,5 +1,5 @@
 
-#### Create a new User
+### Create a new User
 POST http://localhost:3000/auth/signup
 content-type: application/json
 
@@ -8,7 +8,7 @@ content-type: application/json
     "password": "123456"
 }
 
-#### Sign in
+### Sign in
 POST http://localhost:3000/auth/signin
 content-type: application/json
 
@@ -16,6 +16,12 @@ content-type: application/json
     "email": "emai2@email.com",
     "password": "123456"
 }
+
+### Get current user
+GET http://localhost:3000/auth/current-user
+
+### Signout
+POST http://localhost:3000/auth/signout
 
 ### Find user with ID
 GET http://localhost:3000/auth/2
