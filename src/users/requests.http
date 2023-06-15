@@ -8,6 +8,15 @@ content-type: application/json
     "password": "123456"
 }
 
+#### Sign in
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "emai2l@email.com",
+    "password": "123456"
+}
+
 ### Find user with ID
 GET http://localhost:3000/auth/2
 
