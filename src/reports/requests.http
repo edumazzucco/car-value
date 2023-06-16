@@ -1,0 +1,13 @@
+### Create a sale report
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+    "make": "vw",
+    "model": "Fox",
+    "year": 2017,
+    "lng": 0,
+    "lat": 0,
+    "mileage": 87000,
+    "price": 11500
+}
